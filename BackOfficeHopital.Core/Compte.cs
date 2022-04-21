@@ -4,9 +4,11 @@ namespace BackOfficeHopital.Core
 {
     class Compte
     {
+        public int? IdCompte { get; set; }
         public string Nom { get; set;  }
         public string Prenom { get; set; }
         public string DateNaissance { get; set; }
+        public string? MotDePasse { get; set; }
         public string AdresseMail { get; set; }
         public int Role { get; set; }
         public int Service { get; set; }
