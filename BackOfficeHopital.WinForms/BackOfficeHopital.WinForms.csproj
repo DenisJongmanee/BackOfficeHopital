@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjouterCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterCompte.Designer.cs">
+      <DependentUpon>AjouterCompte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Comptes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +64,31 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifierCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierCompte.Designer.cs">
+      <DependentUpon>ModifierCompte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupprimerCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupprimerCompte.Designer.cs">
+      <DependentUpon>SupprimerCompte.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AjouterCompte.resx">
+      <DependentUpon>AjouterCompte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Comptes.resx">
       <DependentUpon>Comptes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierCompte.resx">
+      <DependentUpon>ModifierCompte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SupprimerCompte.resx">
+      <DependentUpon>SupprimerCompte.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
