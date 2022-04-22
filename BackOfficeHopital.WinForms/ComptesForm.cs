@@ -9,6 +9,7 @@ namespace BackOfficeHopital.WinForms
 {
     public partial class Comptes : Form
     {
+        private Core.Comptes comptes;
         public Comptes()
         {
             InitializeComponent();
@@ -25,6 +26,8 @@ namespace BackOfficeHopital.WinForms
 
             Core.Comptes compte = JsonConvert.DeserializeObject<Core.Comptes>(data);
             this.lbxComptes.DataSource = compte.ListComptes;
+
+            this.comptes = compte;
         }
         
         private void btnAjouter_Click(object sender, EventArgs e)
@@ -41,8 +44,10 @@ namespace BackOfficeHopital.WinForms
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            SupprimerCompte supprimerCompte = new SupprimerCompte();
+            SupprimerCompte supprimerCompte = new SupprimerCompte((Core.Compte)this.lbxComptes.SelectedItem, this.comptes);
             supprimerCompte.ShowDialog();
+            
+            comptes.ListComptes.ResetBindings();
         }
 
         private void lblComptes_Click(object sender, EventArgs e)
