@@ -13,6 +13,11 @@ namespace BackOfficeHopital.Core
             this.IdRole = idRole;
             this.NomRole = nomRole;
         }
+
+        public override string ToString()
+        {
+            return $"{NomRole}";
+        }
     }
 
 }

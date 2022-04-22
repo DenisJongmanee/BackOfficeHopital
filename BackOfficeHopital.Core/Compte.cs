@@ -22,7 +22,7 @@ namespace BackOfficeHopital.Core
             Console.WriteLine("Compte crée");
         }
 
-        public Compte(string nom, string prenom, string dateNaissance, string adresseMail, int role, int service)
+        public Compte(string nom, string prenom, string dateNaissance, string adresseMail, int role, int service, string nomRole, string nomService, string motDePasse)
         {
             this.Nom = nom;
             this.Prenom = prenom;
@@ -30,6 +30,9 @@ namespace BackOfficeHopital.Core
             this.AdresseMail = adresseMail;
             this.Role = role;
             this.Service = service;
+            this.NomRole = nomRole;
+            this.NomService = nomService;
+            this.MotDePasse = motDePasse;
         }
         
         public override string ToString()

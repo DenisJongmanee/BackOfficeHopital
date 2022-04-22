@@ -35,8 +35,6 @@ namespace BackOfficeHopital.WinForms
             this.lblRole = new System.Windows.Forms.Label();
             this.lblService = new System.Windows.Forms.Label();
             this.comboBoxService = new System.Windows.Forms.ComboBox();
-            this.textBoxMDP = new System.Windows.Forms.TextBox();
-            this.lblMDP = new System.Windows.Forms.Label();
             this.textBoxMail = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
             this.textBoxDateNaissance = new System.Windows.Forms.TextBox();
@@ -52,115 +50,113 @@ namespace BackOfficeHopital.WinForms
             // comboBoxRole
             // 
             this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Location = new System.Drawing.Point(183, 287);
+            this.comboBoxRole.Location = new System.Drawing.Point(136, 205);
+            this.comboBoxRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(204, 24);
+            this.comboBoxRole.Size = new System.Drawing.Size(154, 21);
             this.comboBoxRole.TabIndex = 29;
             // 
             // lblRole
             // 
-            this.lblRole.Location = new System.Drawing.Point(112, 290);
+            this.lblRole.Location = new System.Drawing.Point(83, 205);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(45, 23);
+            this.lblRole.Size = new System.Drawing.Size(49, 19);
             this.lblRole.TabIndex = 28;
             this.lblRole.Text = "Rôle :";
             // 
             // lblService
             // 
-            this.lblService.Location = new System.Drawing.Point(94, 254);
+            this.lblService.Location = new System.Drawing.Point(71, 176);
+            this.lblService.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblService.Name = "lblService";
-            this.lblService.Size = new System.Drawing.Size(63, 23);
+            this.lblService.Size = new System.Drawing.Size(62, 19);
             this.lblService.TabIndex = 27;
             this.lblService.Text = "Service :";
             // 
             // comboBoxService
             // 
             this.comboBoxService.FormattingEnabled = true;
-            this.comboBoxService.Location = new System.Drawing.Point(183, 251);
+            this.comboBoxService.Location = new System.Drawing.Point(137, 176);
+            this.comboBoxService.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxService.Name = "comboBoxService";
-            this.comboBoxService.Size = new System.Drawing.Size(204, 24);
+            this.comboBoxService.Size = new System.Drawing.Size(154, 21);
             this.comboBoxService.TabIndex = 26;
-            // 
-            // textBoxMDP
-            // 
-            this.textBoxMDP.Location = new System.Drawing.Point(183, 214);
-            this.textBoxMDP.Name = "textBoxMDP";
-            this.textBoxMDP.Size = new System.Drawing.Size(204, 22);
-            this.textBoxMDP.TabIndex = 25;
-            // 
-            // lblMDP
-            // 
-            this.lblMDP.Location = new System.Drawing.Point(56, 217);
-            this.lblMDP.Name = "lblMDP";
-            this.lblMDP.Size = new System.Drawing.Size(101, 23);
-            this.lblMDP.TabIndex = 24;
-            this.lblMDP.Text = "Mot de passe :";
             // 
             // textBoxMail
             // 
-            this.textBoxMail.Location = new System.Drawing.Point(183, 177);
+            this.textBoxMail.Location = new System.Drawing.Point(137, 144);
+            this.textBoxMail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(204, 22);
+            this.textBoxMail.Size = new System.Drawing.Size(154, 20);
             this.textBoxMail.TabIndex = 23;
             // 
             // lblMail
             // 
-            this.lblMail.Location = new System.Drawing.Point(59, 180);
+            this.lblMail.Location = new System.Drawing.Point(44, 146);
+            this.lblMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(98, 23);
+            this.lblMail.Size = new System.Drawing.Size(74, 19);
             this.lblMail.TabIndex = 22;
             this.lblMail.Text = "Adresse mail :";
             // 
             // textBoxDateNaissance
             // 
-            this.textBoxDateNaissance.Location = new System.Drawing.Point(183, 140);
+            this.textBoxDateNaissance.Location = new System.Drawing.Point(137, 114);
+            this.textBoxDateNaissance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDateNaissance.Name = "textBoxDateNaissance";
-            this.textBoxDateNaissance.Size = new System.Drawing.Size(204, 22);
+            this.textBoxDateNaissance.Size = new System.Drawing.Size(154, 20);
             this.textBoxDateNaissance.TabIndex = 21;
             // 
             // lblDateNaissance
             // 
-            this.lblDateNaissance.Location = new System.Drawing.Point(23, 143);
+            this.lblDateNaissance.Location = new System.Drawing.Point(17, 116);
+            this.lblDateNaissance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDateNaissance.Name = "lblDateNaissance";
-            this.lblDateNaissance.Size = new System.Drawing.Size(134, 23);
+            this.lblDateNaissance.Size = new System.Drawing.Size(100, 19);
             this.lblDateNaissance.TabIndex = 20;
             this.lblDateNaissance.Text = "Date de naissance :";
             // 
             // textBoxPrenom
             // 
-            this.textBoxPrenom.Location = new System.Drawing.Point(183, 105);
+            this.textBoxPrenom.Location = new System.Drawing.Point(137, 85);
+            this.textBoxPrenom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPrenom.Name = "textBoxPrenom";
-            this.textBoxPrenom.Size = new System.Drawing.Size(204, 22);
+            this.textBoxPrenom.Size = new System.Drawing.Size(154, 20);
             this.textBoxPrenom.TabIndex = 19;
             // 
             // lblPrenom
             // 
-            this.lblPrenom.Location = new System.Drawing.Point(91, 108);
+            this.lblPrenom.Location = new System.Drawing.Point(68, 88);
+            this.lblPrenom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(66, 23);
+            this.lblPrenom.Size = new System.Drawing.Size(50, 19);
             this.lblPrenom.TabIndex = 18;
             this.lblPrenom.Text = "Prenom :";
             // 
             // textBoxNom
             // 
-            this.textBoxNom.Location = new System.Drawing.Point(183, 69);
+            this.textBoxNom.Location = new System.Drawing.Point(137, 56);
+            this.textBoxNom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(204, 22);
+            this.textBoxNom.Size = new System.Drawing.Size(154, 20);
             this.textBoxNom.TabIndex = 17;
             // 
             // lblNom
             // 
-            this.lblNom.Location = new System.Drawing.Point(111, 72);
+            this.lblNom.Location = new System.Drawing.Point(83, 58);
+            this.lblNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(46, 23);
+            this.lblNom.Size = new System.Drawing.Size(34, 19);
             this.lblNom.TabIndex = 16;
             this.lblNom.Text = "Nom :";
             // 
             // btnValider
             // 
-            this.btnValider.Location = new System.Drawing.Point(183, 337);
+            this.btnValider.Location = new System.Drawing.Point(136, 252);
+            this.btnValider.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnValider.Name = "btnValider";
-            this.btnValider.Size = new System.Drawing.Size(127, 37);
+            this.btnValider.Size = new System.Drawing.Size(95, 30);
             this.btnValider.TabIndex = 15;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = true;
@@ -168,27 +164,26 @@ namespace BackOfficeHopital.WinForms
             // 
             // lblModifierCompte
             // 
-            this.lblModifierCompte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblModifierCompte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblModifierCompte.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblModifierCompte.Location = new System.Drawing.Point(183, 26);
+            this.lblModifierCompte.Location = new System.Drawing.Point(137, 21);
+            this.lblModifierCompte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblModifierCompte.Name = "lblModifierCompte";
-            this.lblModifierCompte.Size = new System.Drawing.Size(193, 23);
+            this.lblModifierCompte.Size = new System.Drawing.Size(145, 19);
             this.lblModifierCompte.TabIndex = 30;
             this.lblModifierCompte.Text = "Modifier le compte";
             this.lblModifierCompte.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // ModifierCompte
+            // ModifierCompteForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 299);
             this.Controls.Add(this.lblModifierCompte);
             this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblService);
             this.Controls.Add(this.comboBoxService);
-            this.Controls.Add(this.textBoxMDP);
-            this.Controls.Add(this.lblMDP);
             this.Controls.Add(this.textBoxMail);
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.textBoxDateNaissance);
@@ -198,10 +193,12 @@ namespace BackOfficeHopital.WinForms
             this.Controls.Add(this.textBoxNom);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.btnValider);
-            this.Name = "ModifierCompte";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ModifierCompteForm";
             this.Text = "ModifierCompte";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblModifierCompte;
@@ -210,8 +207,6 @@ namespace BackOfficeHopital.WinForms
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Label lblService;
         private System.Windows.Forms.ComboBox comboBoxService;
-        private System.Windows.Forms.TextBox textBoxMDP;
-        private System.Windows.Forms.Label lblMDP;
         private System.Windows.Forms.TextBox textBoxMail;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.TextBox textBoxDateNaissance;

@@ -10,7 +10,7 @@ namespace BackOfficeHopital.WinForms
     {
         private Compte compte;
         private Core.Comptes comptes;
-        public SupprimerCompteForm(Core.Compte compte, Core.Comptes comptes)
+        public SupprimerCompteForm(Compte compte, Comptes comptes)
         {
             InitializeComponent();
             this.compte = compte;

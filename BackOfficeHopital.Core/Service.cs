@@ -12,5 +12,10 @@ namespace BackOfficeHopital.Core
             this.IdService = idService;
             this.NomService = nomService;
         }
+
+        public override string ToString()
+        {
+            return $"{NomService}";
+        }
     }
 }
