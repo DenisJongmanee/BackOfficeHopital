@@ -2,10 +2,10 @@
 
 namespace BackOfficeHopital.Core
 {
-    class Vaccin
+    public class Vaccin
     {
-        public string NomVaccin { get; }
-        public int QuantiteeDisponible { get; }
+        public string NomVaccin { get; set; }
+        public int QuantiteeDisponible { get; set; }
 
         public Vaccin(string nomVaccin, int quantiteeDisponible)
         {

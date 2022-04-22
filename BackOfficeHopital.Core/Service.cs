@@ -2,7 +2,7 @@
 
 namespace BackOfficeHopital.Core
 {
-    class Service
+    public class Service
     {
         public int IdService { get; }
         public string NomService { get; }

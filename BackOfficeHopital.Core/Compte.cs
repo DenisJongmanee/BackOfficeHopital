@@ -2,23 +2,23 @@
 
 namespace BackOfficeHopital.Core
 {
-    class Compte
+    public class Compte
     {
-        public int? IdCompte { get; set; }
+        public int IdCompte { get; set; }
         public string Nom { get; set;  }
         public string Prenom { get; set; }
         public string DateNaissance { get; set; }
-        public string? MotDePasse { get; set; }
+        public string MotDePasse { get; set; }
         public string AdresseMail { get; set; }
         public int Role { get; set; }
         public int Service { get; set; }
 
-        protected Compte()
+        public Compte()
         {
             Console.WriteLine("Compte crée");
         }
 
-        protected Compte(string nom, string prenom, string dateNaissance, string adresseMail, int role, int service)
+        public Compte(string nom, string prenom, string dateNaissance, string adresseMail, int role, int service)
         {
             this.Nom = nom;
             this.Prenom = prenom;
