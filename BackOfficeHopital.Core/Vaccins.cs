@@ -8,7 +8,7 @@ namespace BackOfficeHopital.Core
 {
     public class Vaccins
     {
-       public List<Vaccin> ListVaccins { get; set; }
+        public List<Vaccin> ListVaccins { get; set; }
 
     }
 }

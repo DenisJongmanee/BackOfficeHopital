@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Vaccins.cs" />
+    <Compile Include="Comptes.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="Lits.cs" />
     <Compile Include="Roles.cs" />
     <Compile Include="Compte.cs" />
     <Compile Include="Lit.cs" />
