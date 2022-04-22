@@ -29,7 +29,8 @@ namespace BackOfficeHopital.WinForms
 
         private void btnComptesHabilites_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            Comptes comptes = new Comptes();
+            comptes.ShowDialog();
         }
 
         private void lblOccupationLits_Click(object sender, EventArgs e)

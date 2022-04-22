@@ -44,6 +44,7 @@ namespace BackOfficeHopital.WinForms
             this.btnAnnuler.TabIndex = 0;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnConfirmer
             // 
@@ -53,6 +54,7 @@ namespace BackOfficeHopital.WinForms
             this.btnConfirmer.TabIndex = 1;
             this.btnConfirmer.Text = "Confirmer";
             this.btnConfirmer.UseVisualStyleBackColor = true;
+            this.btnConfirmer.Click += new System.EventHandler(this.btnConfirmer_Click);
             // 
             // lblConfirmation
             // 
