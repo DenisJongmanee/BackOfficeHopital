@@ -49,7 +49,11 @@ namespace BackOfficeHopital.WinForms
             Role role = (Role)this.comboBoxRole.SelectedItem;
 
             Service service = (Service)this.comboBoxService.SelectedItem;
-            Compte compte = new Compte(this.textBoxNom.Text, this.textBoxNom.Text, this.textBoxDateNaissance.Text, this.textBoxMail.Text, role.IdRole, service.IdService, role.NomRole, service.NomService, this.textBoxMDP.Text);
+            
+            string hashPassword = BCrypt.Net.BCrypt.HashPassword(this.textBoxMDP.Text);
+            Console.WriteLine(hashPassword);
+
+            Compte compte = new Compte(this.textBoxNom.Text, this.textBoxNom.Text, this.textBoxDateNaissance.Text, this.textBoxMail.Text, role.IdRole, service.IdService, role.NomRole, service.NomService, hashPassword);
             string url = "http://127.0.0.1:5000/api/cs/compte";
             var request = WebRequest.Create(url);
             request.Method = "POST";
