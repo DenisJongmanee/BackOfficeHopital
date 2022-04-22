@@ -11,7 +11,11 @@ namespace BackOfficeHopital.Core
         public string MotDePasse { get; set; }
         public string AdresseMail { get; set; }
         public int Role { get; set; }
+        
+        public string NomRole { get; set; }
         public int Service { get; set; }
+        
+        public string NomService { get; set; }
 
         public Compte()
         {
@@ -26,6 +30,11 @@ namespace BackOfficeHopital.Core
             this.AdresseMail = adresseMail;
             this.Role = role;
             this.Service = service;
+        }
+        
+        public override string ToString()
+        {
+            return $"{Nom} {Prenom}, {AdresseMail}, Service : {NomService}, Rôle : {NomRole}";
         }
 
         ~Compte()

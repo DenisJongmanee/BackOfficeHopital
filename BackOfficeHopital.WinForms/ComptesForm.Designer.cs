@@ -47,6 +47,7 @@ namespace BackOfficeHopital.WinForms
             this.lbxComptes.Name = "lbxComptes";
             this.lbxComptes.Size = new System.Drawing.Size(673, 516);
             this.lbxComptes.TabIndex = 0;
+            this.lbxComptes.SelectedIndexChanged += new System.EventHandler(this.lbxComptes_SelectedIndexChanged);
             // 
             // btnAjouter
             // 

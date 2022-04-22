@@ -4,9 +4,9 @@ namespace BackOfficeHopital.Core
 {
     public class Lit
     {
-        public int NumeroLit { get; }
-        public int NumeroChambre { get; }
-        public bool Occupation { get; }
+        public int NumeroLit { get; set; }
+        public int NumeroChambre { get; set; }
+        public bool Occupation { get; set; }
 
         public Lit()
         {
@@ -20,5 +20,17 @@ namespace BackOfficeHopital.Core
             this.Occupation = occupation;
         }
 
+        public override string ToString()
+        {
+            if (Occupation)
+            {
+                return $"Lit n°{NumeroLit} occupé chambre {NumeroChambre}";
+            }
+            else
+            {
+                return $"Lit n°{NumeroLit} non occupé ";
+            }
+            
+        }
     }    
 }

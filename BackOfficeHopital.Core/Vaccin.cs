@@ -12,5 +12,9 @@ namespace BackOfficeHopital.Core
             this.NomVaccin = nomVaccin;
             this.QuantiteeDisponible = quantiteeDisponible;
         }
+        public override string ToString()
+        {
+            return $"{NomVaccin}; Doses disponibles : {QuantiteeDisponible}";
+        }
     }
 }

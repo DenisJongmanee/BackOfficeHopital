@@ -1,5 +1,9 @@
 ﻿using System;
+using System.IO;
+using System.Net;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using BackOfficeHopital.Core;
 
 namespace BackOfficeHopital.WinForms
 {
@@ -8,6 +12,19 @@ namespace BackOfficeHopital.WinForms
         public Comptes()
         {
             InitializeComponent();
+            
+            
+            string url = "http://127.0.0.1:5000/api/cs/compte";
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+
+            WebResponse webResponse = request.GetResponse();
+
+            var webStream = webResponse.GetResponseStream();
+            string data = new StreamReader(webStream).ReadToEnd();
+
+            Core.Comptes compte = JsonConvert.DeserializeObject<Core.Comptes>(data);
+            this.lbxComptes.DataSource = compte.ListComptes;
         }
         
         private void btnAjouter_Click(object sender, EventArgs e)
@@ -36,6 +53,11 @@ namespace BackOfficeHopital.WinForms
         private void btnHome_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void lbxComptes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
