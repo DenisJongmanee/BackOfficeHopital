@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace BackOfficeHopital.WinForms
 {
-    public partial class ModifierCompte : Form
+    public partial class ModifierCompteForm : Form
     {
-        public ModifierCompte()
+        public ModifierCompteForm()
         {
             InitializeComponent();
         }

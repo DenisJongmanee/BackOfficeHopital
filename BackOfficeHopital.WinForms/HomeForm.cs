@@ -14,9 +14,9 @@ using Newtonsoft.Json;
 
 namespace BackOfficeHopital.WinForms
 {
-    public partial class Home : Form
+    public partial class HomeForm : Form
     {
-        public Home()
+        public HomeForm()
         {
             InitializeComponent();
             
@@ -47,30 +47,11 @@ namespace BackOfficeHopital.WinForms
             this.lbxOccupationLits.DataSource = lits.ListLits;
         }
 
-        private void lbxOccupationLits_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void lbxStockVaccins_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void btnComptesHabilites_Click(object sender, EventArgs e)
         {
-            Comptes comptes = new Comptes();
+            ComptesForm comptes = new ComptesForm();
             comptes.ShowDialog();
-        }
-
-        private void lblOccupationLits_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void lblStocksVaccins_Click(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

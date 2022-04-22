@@ -2,7 +2,7 @@
 
 namespace BackOfficeHopital.WinForms
 {
-    partial class ModifierCompte
+    partial class ModifierCompteForm
     {
         /// <summary>
         /// Required designer variable.

@@ -6,11 +6,11 @@ using BackOfficeHopital.Core;
 
 namespace BackOfficeHopital.WinForms
 {
-    public partial class SupprimerCompte : Form
+    public partial class SupprimerCompteForm : Form
     {
         private Compte compte;
         private Core.Comptes comptes;
-        public SupprimerCompte(Core.Compte compte, Core.Comptes comptes)
+        public SupprimerCompteForm(Core.Compte compte, Core.Comptes comptes)
         {
             InitializeComponent();
             this.compte = compte;

@@ -7,10 +7,10 @@ using BackOfficeHopital.Core;
 
 namespace BackOfficeHopital.WinForms
 {
-    public partial class Comptes : Form
+    public partial class ComptesForm : Form
     {
         private Core.Comptes comptes;
-        public Comptes()
+        public ComptesForm()
         {
             InitializeComponent();
             
@@ -32,19 +32,19 @@ namespace BackOfficeHopital.WinForms
         
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            AjouterCompte ajouterCompte = new AjouterCompte();
+            AjouterCompteForm ajouterCompte = new AjouterCompteForm();
             ajouterCompte.ShowDialog();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            ModifierCompte modifierCompte = new ModifierCompte();
+            ModifierCompteForm modifierCompte = new ModifierCompteForm();
             modifierCompte.ShowDialog();
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            SupprimerCompte supprimerCompte = new SupprimerCompte((Core.Compte)this.lbxComptes.SelectedItem, this.comptes);
+            SupprimerCompteForm supprimerCompte = new SupprimerCompteForm((Core.Compte)this.lbxComptes.SelectedItem, this.comptes);
             supprimerCompte.ShowDialog();
             
             comptes.ListComptes.ResetBindings();
@@ -58,11 +58,6 @@ namespace BackOfficeHopital.WinForms
         private void btnHome_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void lbxComptes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

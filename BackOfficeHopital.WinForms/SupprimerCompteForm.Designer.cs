@@ -2,7 +2,7 @@
 
 namespace BackOfficeHopital.WinForms
 {
-    partial class SupprimerCompte
+    partial class SupprimerCompteForm
     {
         /// <summary>
         /// Required designer variable.

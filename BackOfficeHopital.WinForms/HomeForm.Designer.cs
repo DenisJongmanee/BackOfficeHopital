@@ -1,7 +1,7 @@
 ﻿
 namespace BackOfficeHopital.WinForms
 {
-    partial class Home
+    partial class HomeForm
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -54,7 +54,6 @@ namespace BackOfficeHopital.WinForms
             this.lbxOccupationLits.Name = "lbxOccupationLits";
             this.lbxOccupationLits.Size = new System.Drawing.Size(449, 388);
             this.lbxOccupationLits.TabIndex = 1;
-            this.lbxOccupationLits.SelectedIndexChanged += new System.EventHandler(this.lbxOccupationLits_SelectedIndexChanged);
             // 
             // lbxStockVaccins
             // 
@@ -64,7 +63,6 @@ namespace BackOfficeHopital.WinForms
             this.lbxStockVaccins.Name = "lbxStockVaccins";
             this.lbxStockVaccins.Size = new System.Drawing.Size(449, 388);
             this.lbxStockVaccins.TabIndex = 2;
-            this.lbxStockVaccins.SelectedIndexChanged += new System.EventHandler(this.lbxStockVaccins_SelectedIndexChanged);
             // 
             // lblOccupationLits
             // 
@@ -76,7 +74,6 @@ namespace BackOfficeHopital.WinForms
             this.lblOccupationLits.TabIndex = 3;
             this.lblOccupationLits.Text = "Occupation des lits";
             this.lblOccupationLits.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblOccupationLits.Click += new System.EventHandler(this.lblOccupationLits_Click);
             // 
             // lblStocksVaccins
             // 
@@ -88,7 +85,6 @@ namespace BackOfficeHopital.WinForms
             this.lblStocksVaccins.TabIndex = 4;
             this.lblStocksVaccins.Text = "Stock des vaccins";
             this.lblStocksVaccins.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblStocksVaccins.Click += new System.EventHandler(this.lblStocksVaccins_Click);
             // 
             // Form1
             // 
