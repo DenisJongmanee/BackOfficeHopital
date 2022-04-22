@@ -9,30 +9,33 @@ namespace BackOfficeHopital.WinForms
         {
             InitializeComponent();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        
         private void btnAjouter_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            AjouterCompte ajouterCompte = new AjouterCompte();
+            ajouterCompte.ShowDialog();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            ModifierCompte modifierCompte = new ModifierCompte();
+            modifierCompte.ShowDialog();
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            SupprimerCompte supprimerCompte = new SupprimerCompte();
+            supprimerCompte.ShowDialog();
         }
 
         private void lblComptes_Click(object sender, EventArgs e)
         {
             throw new System.NotImplementedException();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -57,6 +57,7 @@ namespace BackOfficeHopital.WinForms
             this.btnValider.TabIndex = 0;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // lblNom
             // 
@@ -65,7 +66,6 @@ namespace BackOfficeHopital.WinForms
             this.lblNom.Size = new System.Drawing.Size(46, 23);
             this.lblNom.TabIndex = 1;
             this.lblNom.Text = "Nom :";
-            //this.lblNom.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxNom
             // 
@@ -73,7 +73,6 @@ namespace BackOfficeHopital.WinForms
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(204, 22);
             this.textBoxNom.TabIndex = 2;
-            //this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
             // 
             // lblPrenom
             // 

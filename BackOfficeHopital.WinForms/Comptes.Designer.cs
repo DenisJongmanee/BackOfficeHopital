@@ -47,7 +47,6 @@ namespace BackOfficeHopital.WinForms
             this.lbxComptes.Name = "lbxComptes";
             this.lbxComptes.Size = new System.Drawing.Size(673, 516);
             this.lbxComptes.TabIndex = 0;
-            this.lbxComptes.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // btnAjouter
             // 
@@ -87,6 +86,7 @@ namespace BackOfficeHopital.WinForms
             this.btnHome.TabIndex = 4;
             this.btnHome.Text = "Retour à l\'accueil";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // lblComptes
             // 

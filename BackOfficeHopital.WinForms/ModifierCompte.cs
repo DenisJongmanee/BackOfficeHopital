@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace BackOfficeHopital.WinForms
 {
@@ -7,6 +8,11 @@ namespace BackOfficeHopital.WinForms
         public ModifierCompte()
         {
             InitializeComponent();
+        }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

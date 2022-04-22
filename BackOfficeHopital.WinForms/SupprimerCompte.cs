@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace BackOfficeHopital.WinForms
 {
@@ -7,6 +8,16 @@ namespace BackOfficeHopital.WinForms
         public SupprimerCompte()
         {
             InitializeComponent();
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private void btnConfirmer_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

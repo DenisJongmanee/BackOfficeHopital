@@ -164,6 +164,7 @@ namespace BackOfficeHopital.WinForms
             this.btnValider.TabIndex = 15;
             this.btnValider.Text = "Valider";
             this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
             // 
             // lblModifierCompte
             // 
