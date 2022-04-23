@@ -45,6 +45,16 @@ namespace BackOfficeHopital.WinForms
             Console.WriteLine(data2);
             Lits lits = JsonConvert.DeserializeObject<Lits>(data2);
             this.lbxOccupationLits.DataSource = lits.ListLits;
+
+
+            foreach (Vaccin vaccin in vaccins.ListVaccins)
+            {
+                if (vaccin.QuantiteeDisponible < 21)
+                {
+                    this.lblAlerte.Text = this.lblAlerte.Text + $"Stock du vaccin {vaccin.NomVaccin} est faible  ";
+                }
+            }
+
         }
 
 

@@ -37,7 +37,6 @@ namespace BackOfficeHopital.WinForms
             this.lblPrenom = new System.Windows.Forms.Label();
             this.textBoxPrenom = new System.Windows.Forms.TextBox();
             this.lblDateNaissance = new System.Windows.Forms.Label();
-            this.textBoxDateNaissance = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
             this.textBoxMail = new System.Windows.Forms.TextBox();
             this.lblMDP = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@ namespace BackOfficeHopital.WinForms
             this.lblRole = new System.Windows.Forms.Label();
             this.comboBoxRole = new System.Windows.Forms.ComboBox();
             this.lblAjouterCompte = new System.Windows.Forms.Label();
+            this.DTPDateNaissance = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btnValider
@@ -97,13 +97,6 @@ namespace BackOfficeHopital.WinForms
             this.lblDateNaissance.TabIndex = 5;
             this.lblDateNaissance.Text = "Date de naissance :";
             // 
-            // textBoxDateNaissance
-            // 
-            this.textBoxDateNaissance.Location = new System.Drawing.Point(183, 137);
-            this.textBoxDateNaissance.Name = "textBoxDateNaissance";
-            this.textBoxDateNaissance.Size = new System.Drawing.Size(204, 22);
-            this.textBoxDateNaissance.TabIndex = 6;
-            // 
             // lblMail
             // 
             this.lblMail.Location = new System.Drawing.Point(59, 177);
@@ -133,6 +126,7 @@ namespace BackOfficeHopital.WinForms
             this.textBoxMDP.Name = "textBoxMDP";
             this.textBoxMDP.Size = new System.Drawing.Size(204, 22);
             this.textBoxMDP.TabIndex = 10;
+            this.textBoxMDP.UseSystemPasswordChar = true;
             // 
             // comboBoxService
             // 
@@ -177,11 +171,23 @@ namespace BackOfficeHopital.WinForms
             this.lblAjouterCompte.Text = "Ajouter un compte";
             this.lblAjouterCompte.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // AjouterCompte
+            // DTPDateNaissance
+            // 
+            this.DTPDateNaissance.CustomFormat = "yyyy-MM-dd";
+            this.DTPDateNaissance.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DTPDateNaissance.Location = new System.Drawing.Point(183, 141);
+            this.DTPDateNaissance.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
+            this.DTPDateNaissance.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.DTPDateNaissance.Name = "DTPDateNaissance";
+            this.DTPDateNaissance.Size = new System.Drawing.Size(200, 22);
+            this.DTPDateNaissance.TabIndex = 16;
+            // 
+            // AjouterCompteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.DTPDateNaissance);
             this.Controls.Add(this.lblAjouterCompte);
             this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.lblRole);
@@ -191,18 +197,19 @@ namespace BackOfficeHopital.WinForms
             this.Controls.Add(this.lblMDP);
             this.Controls.Add(this.textBoxMail);
             this.Controls.Add(this.lblMail);
-            this.Controls.Add(this.textBoxDateNaissance);
             this.Controls.Add(this.lblDateNaissance);
             this.Controls.Add(this.textBoxPrenom);
             this.Controls.Add(this.lblPrenom);
             this.Controls.Add(this.textBoxNom);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.btnValider);
-            this.Name = "AjouterCompte";
+            this.Name = "AjouterCompteForm";
             this.Text = "AjouterCompte";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.DateTimePicker DTPDateNaissance;
 
         private System.Windows.Forms.Label lblAjouterCompte;
 
@@ -224,7 +231,6 @@ namespace BackOfficeHopital.WinForms
 
         private System.Windows.Forms.TextBox textBoxPrenom;
         private System.Windows.Forms.Label lblDateNaissance;
-        private System.Windows.Forms.TextBox textBoxDateNaissance;
 
         private System.Windows.Forms.Button btnValider;
         private System.Windows.Forms.Label lbl;

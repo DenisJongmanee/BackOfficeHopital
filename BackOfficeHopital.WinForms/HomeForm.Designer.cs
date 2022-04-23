@@ -34,6 +34,7 @@ namespace BackOfficeHopital.WinForms
             this.lbxStockVaccins = new System.Windows.Forms.ListBox();
             this.lblOccupationLits = new System.Windows.Forms.Label();
             this.lblStocksVaccins = new System.Windows.Forms.Label();
+            this.lblAlerte = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnComptesHabilites
@@ -86,20 +87,34 @@ namespace BackOfficeHopital.WinForms
             this.lblStocksVaccins.Text = "Stock des vaccins";
             this.lblStocksVaccins.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Form1
+            // lblAlerte
+            // 
+            this.lblAlerte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle) ((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.lblAlerte.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblAlerte.Location = new System.Drawing.Point(499, 478);
+            this.lblAlerte.Name = "lblAlerte";
+            this.lblAlerte.Size = new System.Drawing.Size(449, 23);
+            this.lblAlerte.TabIndex = 5;
+            // 
+            // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 604);
+            this.Controls.Add(this.lblAlerte);
             this.Controls.Add(this.lblStocksVaccins);
             this.Controls.Add(this.lblOccupationLits);
             this.Controls.Add(this.lbxStockVaccins);
             this.Controls.Add(this.lbxOccupationLits);
             this.Controls.Add(this.btnComptesHabilites);
-            this.Name = "Form1";
+            this.Name = "HomeForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label lblAlerte;
+
+        private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.Label lblStocksVaccins;
 

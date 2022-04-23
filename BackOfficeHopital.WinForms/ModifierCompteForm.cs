@@ -49,7 +49,7 @@ namespace BackOfficeHopital.WinForms
             this.textBoxNom.Text = compte.Nom;
             this.textBoxPrenom.Text = compte.Prenom;
 
-            this.textBoxDateNaissance.Text = compte.DateNaissance;
+            this.DTPDateNaissance.Text = compte.DateNaissance;
             this.textBoxMail.Text = compte.AdresseMail;
 
 
@@ -59,8 +59,9 @@ namespace BackOfficeHopital.WinForms
         {
             compte.Nom = this.textBoxNom.Text;
             compte.Prenom = this.textBoxPrenom.Text;
-            compte.DateNaissance = this.textBoxDateNaissance.Text;
+            compte.DateNaissance = this.DTPDateNaissance.Text;
             compte.AdresseMail = this.textBoxMail.Text;
+            compte.MotDePasse = BCrypt.Net.BCrypt.HashPassword(this.textBoxMDP.Text);
 
             Role newRole = (Role)this.comboBoxRole.SelectedItem;
             compte.Role = newRole.IdRole;
